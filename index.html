@@ -11,13 +11,15 @@
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 color: #535353;
                 display: grid;
-                grid-template-columns: 13% auto;
+                display: grid;
+                grid-template-columns: 13%;
+                grid-template-rows: 2rem 100vh;
             }
             article{
                 display: flex;
                 flex-direction: column;
                 height: 100vh;
-                padding: 1em;
+                padding: 2em 1em;
                 box-shadow: 0.5em -1em 1em rgba(213, 213, 213, 0.5);
                 position: sticky;
             }
@@ -81,11 +83,12 @@
 
 
             #home-feed{
-                margin-top: 10em;
+                margin-top: 5em;
                 padding-left: 2em;
                 position: relative;
                 background-color: #eff2f4;
                 height: 100%;
+                grid-column-start: 2;
 
             }
             #feed{
@@ -103,11 +106,21 @@
                 border: 2px solid #0080001f;
                 padding: 3em;
             }
+            #searchBar{
+                padding: 2.5rem;
+            }
+            #search{
+                width: 30%;
+                padding: 0.7em;
+                background-color: #eff2f4;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
 
         </style>
 
     </head>
     <body>
+
         <article>
             <div id="logo">
                 <p><b>Dev Resources</b></p>
@@ -137,7 +150,12 @@
             </div>
         </article>
         
-                         <!--POST FEED-->
+                        <!--search bar-->
+        <div id="searchBar">
+            <input type="text" id="search" placeholder="search post">
+        </div>
+        
+                         <!--POST FEEDd-->
 
         <section id="home-feed">
             <h1>HOME</h1>
