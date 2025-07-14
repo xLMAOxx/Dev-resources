@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Developer Resources</title>
+        <script src="script.js" defer></script>
         <style>
 
             body{
@@ -34,7 +35,7 @@
                 color:#0c7fda;
 
             }            
-            #submit{
+            #submitbtn{
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 color:#535353;
                 margin: 10em 0;
@@ -42,6 +43,9 @@
             submit:focus{
                 outline: none;
                 border-color: #0c7fda;
+            }
+            submit:active{
+                background: red;
             }
             #discription{
                 height: 10em;
@@ -92,7 +96,7 @@
                 grid-column-start: 2;
 
             }
-            #feed{
+            /*#feed{
                 padding: 1em;
                 position: absolute;
                 min-height: 60vh;
@@ -102,10 +106,9 @@
                 right: 2em;
                 background-color: white;
                 border-radius: 0.7em;
-            }
+            }*/
             #posts{
                 border: 2px solid #0080001f;
-                padding: 3em;
             }
             #searchBar{
                 padding: 2.5rem;
@@ -116,12 +119,22 @@
                 background-color: #eff2f4;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
+            .addingPost{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding: 1em;
+                background-color: white;
+                border-radius: 0.7em;
+                text-align: center;
+                margin: 0 40% 1em 0;
+                word-break: break-word;
+                overflow-wrap: break-word;
+            }
 
         </style>
         
     </head>
     <body>
-
+        
         <article>
             <div id="logo">
                 <p><b>Dev Resources</b></p>
@@ -144,7 +157,7 @@
                     </div>
 
                     <div class="formGroup">
-                        <input type="submit" value="Submit" id="submit"/>
+                        <input type="submit" value="Submit" id="submitbtn"/>
                     </div>
                     
                 </form>
@@ -161,9 +174,12 @@
         <section id="home-feed">
             <h1>HOME</h1>
             <div id="feed">
-                 <div id="posts"></div>
+                 <div id="posts">
+                    <!--<div class="addingPosts"> title <br> url <br> text</div>-->
+                 </div>
             </div>
            
         </section>
+        
     </body>
 </html>
