@@ -1,4 +1,142 @@
-nav{
-    display: flex;
-    flex-direction: row;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #CCCCCC;
+  display: grid;
+  display: grid;
+  grid-template-columns: 13%;
+  grid-template-rows: 2rem 100vh;
+  background-color: #151515;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 2em 1em;
+  box-shadow: 0.5em -1em 1em rgba(0, 0, 0, 0.5);
+  position: sticky;
+}
+#logo {
+  border-radius: 10em;
+  border: 0.3em double #17addb;
+  border-radius: 3em;
+  height: 4em;
+  width: auto;
+  text-align: center;
+  color: #0c7fda;
+}
+#submitbtn {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #535353;
+  margin: 10em 0;
+}
+submit:focus {
+  outline: none;
+  border-color: #0c7fda;
+}
+#discription {
+  height: 10em;
+  border-radius: 0.5em;
+  border-style: solid;
+  background-color: #CCCC;
+}
+#postDiv {
+  flex-direction: column;
+  display: flex;
+}
+#postForm {
+  display: flex;
+  flex-direction: column;
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding-top: 1em;
+}
+label {
+  display: inline-block;
+  width: 6em;
+}
+
+input {
+  padding: 0.3em;
+  border-style: solid;
+  border-radius: 3em;
+  background-color: #CCCC;
+  border-color: #FFD700;
+}
+input::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 3em;
+  background-color: #CCCC;
+  mask:
+    radial-gradient(2em at 2em 2em,#0000 calc(98% - 0.1em),#000 calc(100% - 0.1em) 98%,#0000) -2em -2em,
+    linear-gradient(90deg,#000 0.2em,#0000 0) -0.1em 50% /100% calc(100% - 4em + 0.1em) repeat-x,
+    linear-gradient(#000 0.2em,#0000 0) 50% -0.1em /calc(100% - 4em + 0.1em) 100% repeat-y;
+}
+
+input:hover {
+  background-color: #e9f5fe;
+}
+input:focus {
+  outline: none;
+  border-color: #0c7fda;
+}
+
+/*FOR POST FEED*/
+
+h1{
+  color: #FFD700;
+}
+#home-feed {
+  margin-top: 5em;
+  padding-left: 2em;
+  position: relative;
+  background-color: #000;
+  height: 100%;
+  grid-column-start: 2;
+}
+#feed {
+  padding: 1em;
+  position: absolute;
+  min-height: 60vh;
+  top: 6em;
+  bottom: 2em;
+  left: 2em;
+  right: 2em;
+  background-color: #031c30;
+  border-radius: 0.7em;
+}
+#posts {
+  border: 2px solid #0080001f;
+}
+#searchBar {
+  padding: 2.5rem;
+}
+#search {
+  width: 30%;
+  padding: 0.7em;
+  /*! background-color: #eff2f4; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.addingPost {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1em;
+  background-color: white;
+  border-radius: 0.7em;
+  text-align: center;
+  margin: 0 40% 1em 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+@media (max-width: 1330px){
+  #logo{
+    overflow-wrap: break-word;
+  }
+  
 }
